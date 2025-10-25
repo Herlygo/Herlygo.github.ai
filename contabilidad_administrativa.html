@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contabilidad Administrativa — Proyecto Final</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Contabilidad Administrativa</h1>
+        <div class="subtitle">Presentación Virtual de sus Contenidos</div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="card mt-16">
+        <h2>Objetivo</h2>
+        <p>Conceptos clave de Contabilidad Administrativa</p>
+      </section>
+
+      <section class="card mt-18">
+        <h2>Contenidos</h2>
+        <div class="accordion">
+          <button class="accordion-item">1. Costos: clasificación y comportamiento</button>
+          <div class="accordion-panel">
+            <h3>Costos fijos</h3>
+            <button class="detail-btn" aria-expanded="false" aria-controls="detail-fixed" aria-label="Mostrar detalles de costos fijos">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <path d="M8 5l8 7-8 7" stroke="#0b5ed7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="sr-only">Mostrar detalles</span>
+            </button>
+            <div id="detail-fixed" class="detail-panel" aria-hidden="true">
+              <p>Los costos fijos son aquellos que no cambian con el nivel de producción o ventas dentro de un rango relevante de actividad. Ejemplos típicos incluyen alquiler de locales, salarios administrativos, seguros y depreciación de equipos. Aunque son constantes en el corto plazo, se distribuyen entre unidades producidas para calcular el costo unitario.</p>
+              <h4>Ejemplos y tratamiento contable</h4>
+              <p>Ejemplo 1: Alquiler mensual Q2,000 — no varía si produce 0 o 1,000 unidades. En contabilidad, el alquiler se registra como gasto periódico y se asigna como costo fijo para análisis de costo por unidad.</p>
+              <p>Ejemplo 2: Depreciación anual de un equipo — es un costo fijo que se calcula y distribuye mensualmente. Para decisiones operativas se puede considerar como costo del periodo.</p>
+              <p>Nota: aunque los costos fijos no cambian con la actividad en el corto plazo, pueden modificarse en el largo plazo (contratos, renovaciones).</p>
+            </div>
+
+            <h3>Costos variables</h3>
+            <button class="detail-btn" aria-expanded="false" aria-controls="detail-var" aria-label="Mostrar detalles de costos variables">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <path d="M8 5l8 7-8 7" stroke="#0b5ed7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="sr-only">Mostrar detalles</span>
+            </button>
+            <div id="detail-var" class="detail-panel" aria-hidden="true">
+              <p>Los costos variables varían directamente con la cantidad producida o vendida. Ejemplos comunes son materias primas, comisiones por venta y energía consumida por unidad fabricada. El costo variable unitario permite calcular el margen de contribución por unidad (precio - costo variable).</p>
+              <h4>Cálculo y uso en decisiones</h4>
+              <p>Margen de contribución unitario = Precio de venta - Costo variable unitario. Este margen indica cuánto aporta cada unidad a cubrir costos fijos y generar utilidad.</p>
+              <p>Ejemplo: Precio Q100, costo variable Q60 → margen Q40. Si costos fijos = Q2,000, se necesitan 50 unidades (2000/40) para cubrirlos.</p>
+              <p>En análisis de precios y promociones, ajustar el costo variable afecta directamente la rentabilidad marginal.</p>
+            </div>
+
+            <h3>Costos mixtos (semi-variables)</h3>
+            <button class="detail-btn" aria-expanded="false" aria-controls="detail-mixt" aria-label="Mostrar detalles de costos mixtos">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <path d="M8 5l8 7-8 7" stroke="#0b5ed7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="sr-only">Mostrar detalles</span>
+            </button>
+            <div id="detail-mixt" class="detail-panel" aria-hidden="true">
+              <p>Los costos mixtos contienen una parte fija y otra variable. Por ejemplo, una factura de teléfono con una cuota básica fija más cargos por consumo adicional, o la nómina donde hay un salario base (fijo) y horas extra (variable). Para su análisis se separan en componente fijo y variable mediante métodos como el análisis de punto alto-bajo o regresión.</p>
+              <h4>Separación de componentes</h4>
+              <p>Método punto alto-bajo: seleccionar el nivel más alto y más bajo de actividad y calcular la variación en costos totales para estimar el costo variable por unidad. Luego restar la parte variable de los costos totales para estimar la porción fija.</p>
+              <p>Método de regresión: usar regresión lineal (costos totales = fijo + variable * actividad) para estimar con múltiples observaciones. Es más preciso si hay datos suficientes.</p>
+              <p>Ejemplo práctico: si al producir 100 unidades los costos totales son Q5,000 y al producir 200 unidades son Q7,000, la diferencia de Q2,000 asociada a 100 unidades sugiere un costo variable unitario Q20 y el resto Q3,000 sería aproximación de costos fijos.</p>
+            </div>
+          </div>
+
+          <button class="accordion-item">2. Punto de Equilibrio</button>
+          <div class="accordion-panel">
+            <p>Concepto y fórmulas para calcular unidades y monto en ventas para cubrir costos. Usamos la fórmula: Punto de equilibrio (unidades) = Costos fijos / (Precio - Costo variable unitario).</p>
+          </div>
+
+          <button class="accordion-item">3. Presupuestos y control</button>
+          <div class="accordion-panel">
+            <p>Elaboración de presupuestos y su uso en la toma de decisiones: proyección de ventas, costos y utilidades; comparación con resultados reales para tomar acciones correctivas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card mt-18">
+        <h2>Calculadora: Punto de Equilibrio</h2>
+        <div class="calculator">
+          <div class="calc-row"><label for="price">Precio de venta unitario (Q)</label><input id="price" title="Precio de venta unitario" placeholder="0.00" type="number" step="0.01" value="100"></div>
+          <div class="calc-row"><label for="varcost">Costo variable unitario (Q)</label><input id="varcost" title="Costo variable unitario" placeholder="0.00" type="number" step="0.01" value="60"></div>
+          <div class="calc-row"><label for="fixed">Costos fijos totales (Q)</label><input id="fixed" title="Costos fijos totales" placeholder="0.00" type="number" step="0.01" value="2000"></div>
+          <div class="calc-row"><button id="calcBtn" class="btn">Calcular</button><button id="resetCalc" class="btn secondary">Limpiar</button></div>
+          <div id="calcResult" class="mt-12 preview-card">Ingrese valores y presione Calcular.</div>
+          <div id="peChart" class="mt-12"></div>
+        </div>
+      </section>
+
+      <section class="card mt-18">
+        <h2>Formulario de entrega</h2>
+        <form id="caForm">
+          <div class="form-row"><label for="name">Nombre del estudiante</label><input id="name" name="name" required></div>
+          <div class="form-row"><label for="title">Título del proyecto</label><input id="title" name="title" required></div>
+        </form>
+        <div id="caMsg" class="mt-12"></div>
+      </section>
+
+
+    </main>
+  </div>
+
+  <script src="js/cont_admin.js"></script>
+</body>
+</html>
